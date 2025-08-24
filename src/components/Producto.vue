@@ -13,7 +13,7 @@ defineProps({
   <div class="mx-5 my-10 bg-gray-100 shadow-md px-5 py-10 rounded-xl">
     <p class="font-bold mb-3 text-gray-700 uppercase">Código:
       <span class="font-normal normal-case">
-        {{ producto.id }}
+        {{ producto.codigo }}
       </span>
     </p>
 
@@ -58,7 +58,7 @@ defineProps({
         type="button"
         class="block w-full py-2 px-10 bg-blue-800 hover:bg-blue-800
         text-white font-bold uppercase rounded-lg"
-        @click="$emit('actualizar-producto', producto.id)"
+        @click="$emit('actualizar-producto', producto.codigo)"
       >
         Editar
       </button>
@@ -67,7 +67,7 @@ defineProps({
         type="button"
         class="block w-full py-2 px-10 bg-blue-800 hover:bg-blue-800
         text-white font-bold uppercase rounded-lg"
-        @click="$emit('eliminar-producto', producto.id)"
+        @click="$emit('eliminar-producto', producto.codigo)"
       >
         Eliminar
       </button>
